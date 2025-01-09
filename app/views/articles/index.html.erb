@@ -1,5 +1,4 @@
-<ul>
-  <% @articles.each do |article| %>
-    <li><%= link_to article.title, article %></li>
-  <% end %>
-</ul>
+<% @articles.each do |article| %>
+  <h2><%= link_to article.title, article %></h2>
+  <p><%= article.content %></p>
+<% end %>
