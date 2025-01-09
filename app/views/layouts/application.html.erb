@@ -13,6 +13,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="px-3 py-2 mb-3 bg-light d-flex justify-content-between align-items-center">
+      <h5 class="m-0">Wikinimous</h5>
+      <a href="/articles/new" class="btn btn-primary">New Article</a>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
